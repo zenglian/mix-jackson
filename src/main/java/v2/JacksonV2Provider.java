@@ -10,8 +10,6 @@ import javax.ws.rs.ext.Provider;
 import org.glassfish.jersey.server.ExtendedUriInfo;
 
 @Provider
-@Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
 public class JacksonV2Provider extends com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider {
   @Context
   private ExtendedUriInfo uriInfo;
